@@ -13,14 +13,16 @@
     <link rel="stylesheet" href="public/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="public/assets/css/animate.css">
     <link rel="stylesheet" href="public/assets/css/plugins.css" />
-    <link rel="stylesheet" href="public/assets/css/style.css">
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="public/assets/css/slick.min.css">
     <link rel="stylesheet" href="assets/sweetalert/css/dark.css">
-    <style type="text/css">
+    <link rel="stylesheet" href="public/assets/css/style.css">
+   <style type="text/css">
         h4 a {
             color: #2d3d56 !important
         }
+
 
         #callFrm input[type="text"].input-active,
         #callFrm input[type="text"]:focus::after {
@@ -41,8 +43,10 @@
             font-weight: 900;
             letter-spacing: 3px;
         }
-
-        .bnr-hd .seo-styling {
+        .foo-col{
+            display: ruby-text;
+        }
+        /* .bnr-hd .seo-styling {
             font-size: 2.75rem;
         }
 
@@ -63,14 +67,14 @@
             line-height: 1.2;
         }
 
-        .wb-rt-dec .heading2 {
+        /* .wb-rt-dec .heading2 {
             color: #fff !important;
             margin: 0;
             font-size: 2.25rem;
             font-weight: 800;
             letter-spacing: -.25px;
             line-height: 1.2;
-        }
+        } */ 
 
         .exp-count .heading2 {
             font-size: 5rem;
@@ -142,6 +146,7 @@
             line-height: 1.2;
             margin-top: 0;
         }
+
         .logo_top--fixed img {
             width: 150px;
             height: 70px;
@@ -190,6 +195,44 @@
                 font-weight: 800;
             }
         }
+
+        @media(max-width:400px) {
+            .mt60 {
+                text-align: -webkit-center;
+                margin-right: 1rem;
+            }
+
+            .top_sub_hd {
+                font-size: 1rem;
+            }
+
+            .sw-services {
+                width: auto;
+            }
+
+            .technologies {
+                margin-top: 31vh;
+            }
+
+            .serv-e-list.hideScrollBar .sl-icon img {
+                width: auto;
+            }
+
+            .portfolio-slider .slick-list {
+                margin: 0;
+            }
+
+            .ptb60 {
+                padding: 10px 0;
+            }
+            .cpr-row{
+                margin: 0 1px;
+            }
+            .toggle-menu{
+                display: none;
+            }
+
+        }
     </style>
 </head>
 
@@ -211,46 +254,18 @@
                 <div class="nav-menus-wrapper align-to-right">
                     <ul class="nav-menu">
                         <li>
-                            <a class="" href="digital-marketing.html">Digital Marketing</a>
+                            <a class="" href="#">Digital Marketing</a>
                             <ul class="nav-dropdown xs-icon-menu">
                                 <li class="single-menu-item">
-                                    <a class="" href="social-media-marketing.html">Social Media Marketing</a>
+                                    <a class="" href="#">Social Media Marketing</a>
                                 </li>
-                                <!-- <li class="single-menu-item">
-                                    <a class="" href="seo-services.html">Search Engine Optimization</a>
+                                 <li class="single-menu-item">
+                                    <a class="" href="#">App Development & Management</a>
                                 </li>
-                                <li class="single-menu-item">
-                                    <a class="" href="content-marketing.html">Content Marketing</a>
-                                </li>
-                                <li class="single-menu-item">
-                                    <a class="" href="content-development.html">Content Development</a>
-                                </li>
-                                <li class="single-menu-item">
-                                    <a class="" href="digital-transformation-services.html">Digital Transformation
-                                        Services</a>
-                                </li>
-                                <li class="single-menu-item">
-                                    <a class="" href="email-marketing.html">Email Marketing</a>
-                                </li>
-                                <li class="single-menu-item">
-                                    <a class="" href="mobile-app-marketing.html">Mobile App Marketing</a>
-                                </li>
-                                <li class="single-menu-item">
-                                    <a class="" href="online-advertising.html">Online Advertising</a>
-                                </li>
-                                <li class="single-menu-item">
-                                    <a class="" href="influencer-marketing.html">Influencer Marketing</a>
-                                </li>
-                                <li class="single-menu-item">
-                                    <a class="" href="online-reputation-management.html">Online Reputation</a>
-                                </li>
-                                <li class="single-menu-item">
-                                    <a class="" href="video-marketing-services.html">Video Marketing</a>
-                                </li> -->
                             </ul>
                         </li>
                         <li>
-                            <a class="" href="web-development-company.html">Web Development</a>
+                            <a class="" href="#">Web Development</a>
                             <ul class="nav-dropdown xs-icon-menu">
                                 <!-- <li class="single-menu-item">
                                     <a class="" href="custom-website-development.html">Custom Website Development</a>
@@ -259,8 +274,12 @@
                                     <a class="" href="mobile-app-development.html">Mobile App Development</a>
                                 </li> -->
                                 <li class="single-menu-item">
-                                    <a class="" href="web-designing.html">Web Designing</a>
+                                    <a class="" href="#">Web Designing</a>
                                 </li>
+                                <li class="single-menu-item">
+                                    <a class="" href="#">Software Design</a>
+                                </li>
+                               
                                 <!-- <li class="single-menu-item">
                                     <a class="" href="crm-development.html">CRM Development</a>
                                 </li>
@@ -294,7 +313,7 @@
                         <li>
                             <a class="" href="branding.html">Branding</a>
                             <ul class="nav-dropdown xs-icon-menu">
-                                <li class="single-menu-item">
+                                <!-- <li class="single-menu-item">
                                     <a class="" href="influencer-marketing.html">Influencer Marketing</a>
                                 </li>
                                 <li class="single-menu-item">
@@ -323,21 +342,25 @@
                                 </li>
                                 <li class="single-menu-item">
                                     <a class="" href="video-production.html">Video Production</a>
-                                </li>
+                                </li> -->
                             </ul>
                         </li>
                         <li>
                             <a class="" href="services.html">Services</a>
                             <ul class="nav-dropdown xs-icon-menu">
                                 <li class="single-menu-item">
-                                    <a class="" href="web-hosting.html">Web Hosting</a>
+                                    <a class="" href="#">Social Media App Development & Management</a>
                                 </li>
                                 <li class="single-menu-item">
-                                    <a class="" href="it-solutions-company.html">IT Solutions</a>
+                                    <a class="" href="#">IT Network Services</a>
                                 </li>
                                 <li class="single-menu-item">
-                                    <a class="" href="business-setup.html">Business Setup</a>
+                                    <a class="" href="#">Computer Systems Housing Services</a>
                                 </li>
+                                <li class="single-menu-item">
+                                    <a class="" href="#">Data Entry Services</a>
+                                </li>
+                            
                             </ul>
                         </li>
                         <li>
@@ -599,8 +622,8 @@
                     </div> -->
                         <div class="sw-spider--bg">
                             <img src="public/img/media/spider-new-bg5ff2ddfa18a04.png"
-                                alt="Spiderworks-Digital Marketing Company-Home Page Logo Image"
-                                title="Spiderworks-Digital Marketing Company-Home Page Logo Image">
+                                alt="modalife-Digital Marketing Company-Home Page Logo Image"
+                                title="modalife-Digital Marketing Company-Home Page Logo Image">
                         </div>
                     </div>
                 </div>
@@ -659,7 +682,7 @@
                                     <h4>
                                         <a href="social-media-marketing.html">Social Media Marketing</a>
                                     </h4>
-                                    <p>The social media marketing experts from SpiderWorks use innovative ideas and
+                                    <p>The social media marketing experts from modalife use innovative ideas and
                                         thought-provoking creatives to generate leads and bring the best out of social
                                         media marketing. Connect with us today to explore social media marketing
                                         opportunities and take advantage of social media for the benefit of your
@@ -690,7 +713,7 @@
                                         <a href="online-advertising.html">Online Advertising</a>
                                     </h4>
                                     <p>We assure you extensive reach and conversion rates through custom-tailored online
-                                        marketing techniques. SpiderWorks focuses on exclusively selected online
+                                        marketing techniques. modalife focuses on exclusively selected online
                                         platforms to market your brand optimally.</p>
                                 </div>
                             </div>
@@ -708,7 +731,7 @@
                                         splendid one for you.</p>
                                 </div>
                             </div>
-                            <div class="row sl-single">
+                            <!-- <div class="row sl-single">
                                 <div class="sl-icon col-md-1">
                                     <img src="public/img/media/Content%20Marketing%20Icon602fc8d3b3f67.png"
                                         alt="Content Marketing Icon" title="Content Marketing Icon">
@@ -743,7 +766,7 @@
                                     <h4>
                                         <a href="online-reputation-management.html">Online Reputation</a>
                                     </h4>
-                                    <p>SpiderWorks will build you an optimistic online reputation, frequently
+                                    <p>modalife will build you an optimistic online reputation, frequently
                                         interacting with the users and responding in the most positive manner to every
                                         reviews and criticism, thereby, promoting your identity.</p>
                                 </div>
@@ -771,7 +794,7 @@
                                     <h4>
                                         <a href="mobile-app-marketing.html">Mobile App Marketing</a>
                                     </h4>
-                                    <p>SpiderWorks will provide you with an end-to-end mobile app marketing solution to
+                                    <p>modalife will provide you with an end-to-end mobile app marketing solution to
                                         publicize it extensively to reach a wider audience and keep the users engaged,
                                         to hit the bull’s eye.</p>
                                 </div>
@@ -800,7 +823,7 @@
                                         <a href="custom-website-development.html">Custom Website Development</a>
                                     </h4>
                                     <p>Need a high-quality custom website development company in Dubai to make your
-                                        digital vision a reality? SpiderWorks specialises in web development and design,
+                                        digital vision a reality? modalife specialises in web development and design,
                                         creating personalised websites tailored to your business needs. Our strength
                                         lies in developing an impressive online presence through modern designs and
                                         flexible solutions. Partner with us to achieve growth and success through the
@@ -818,7 +841,7 @@
                                     </h4>
                                     <p>Create a space in the customer’s mind through catchy logos, memorable taglines,
                                         incredible brochures and innovative campaigns. Make yours shine, among the crowd
-                                        of similar brands, with all the brilliance and elegance. Talk to SpiderWorks,
+                                        of similar brands, with all the brilliance and elegance. Talk to modalife,
                                         one of the best branding agencies in Dubai.</p>
                                 </div>
                             </div>
@@ -845,7 +868,7 @@
                                     <h4>
                                         <a href="web-hosting.html">Web Hosting</a>
                                     </h4>
-                                    <p>SpiderWorks provides premier web hosting solutions strengthened with firewalls
+                                    <p>modalife provides premier web hosting solutions strengthened with firewalls
                                         and exclusive add-on features. Do reach out if you are looking for an affordable
                                         web hosting service with advanced security features.</p>
                                 </div>
@@ -884,7 +907,7 @@
                                     <h4>
                                         <a href="crm-development.html">CRM Development</a>
                                     </h4>
-                                    <p>SpiderWorks stands as a prominent custom CRM Development Company in Dubai. With
+                                    <p>modalife stands as a prominent custom CRM Development Company in Dubai. With
                                         years of experience, our skilled team of CRM Developers offers customized
                                         solutions that perfectly match your company&#039;s requirements. We specialize
                                         in providing cutting-edge CRM tools, ensuring they are optimized to yield the
@@ -899,7 +922,7 @@
                                         <a href="software-development.html">Software Development</a>
                                     </h4>
                                     <p>Software Development is an engineering job and not a freelancer&#039;s cup of
-                                        tea. SpiderWorks has been into software development for the last 2 decades and
+                                        tea. modalife has been into software development for the last 2 decades and
                                         we have developed custom software solutions for clients across the globe.</p>
                                 </div>
                             </div>
@@ -928,14 +951,13 @@
                                         in Dubai. We take care of the technical aspects so you can concentrate on your
                                         main business while we keep your website safe, current, and error-free.</p>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- end -->
     <!-- business-tranform -->
     <section class="b-transform ptb60">
         <div class="container">
@@ -946,18 +968,14 @@
                     </div>
                     <div class="bt-desc pt20 big-tag">
                         <p>Transform your business through thoughtfully created, adequately embellished, social media
-                            marketing campaigns with SpiderWorks, the trusted digital marketing company in UAE. We offer
+                            marketing campaigns with modalife, the trusted digital marketing company in UAE. We offer
                             distinctively created campaigns, a beautiful amalgamation of creativity and marketing
                             skills, to mark your presence felt. Let’s make your brand number one in the field.</p>
                     </div>
-                    <div class="partner-google">
-                        <a href="https://www.google.com/partners/agency?id=1371011547" target="_blank">
-                            <span>a <img src="public/img/google.png" alt=""> partner Company</span>
-                        </a>
-                    </div>
+
                 </div>
                 <div class="col-md-6">
-                    <img src="img/Creatievfreddom.png">
+                    <img src="public/img/Creatievfreddom.png">
                 </div>
             </div>
             <div class="row exp-row">
@@ -997,7 +1015,6 @@
             </div>
         </div>
     </section>
-    <!-- end -->
     <!-- testimonial area section -->
     <section class="portfolio_section">
         <style>
@@ -1075,22 +1092,17 @@
                 <div class="single-portfolio">
                     <img src="public/img/media/IMG_5167a6571963f7bd6a.jpg" alt="" title="">
                     <div class="testimonial-detail">
-                        <!--<div class="test-quote tl-time bounceInRight" data-delighter="start:0.60">-->
-                        <!--    <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" data-name="Capa 1" viewBox="0 0 975.04 860.64"><path d="M50,917.84H354a50,50,0,0,0,50-50v-304a50,50,0,0,0-50-50H208.5q2.85-119.4,55.4-191.2,41.4-56.7,125.3-93.8a49.93,49.93,0,0,0,24.8-67.1l-36-76a50,50,0,0,0-65.1-24.4q-99.3,42.9-167.7,108.8Q61.8,250.69,30.9,352T0,628.84v239A50,50,0,0,0,50,917.84Z" transform="translate(0 -57.2)"/><path d="M869,61.54q-98.1,42.75-166.9,108.6-84.15,80.55-115,181.2t-30.9,277.5v239a50,50,0,0,0,50,50h304a50,50,0,0,0,50-50v-304a50,50,0,0,0-50-50H764.7q2.85-119.4,55.4-191.2,41.4-56.7,125.3-93.8a49.93,49.93,0,0,0,24.8-67.1l-35.9-75.8A50.14,50.14,0,0,0,869,61.54Z" transform="translate(0 -57.2)"/></svg>-->
-                        <!--</div>-->
-                        <!--<div class="test-pro tl-time bounceInRight" data-delighter="start:0.70">-->
-                        <!--    <span>Director of Marhaba Care</span>-->
-                        <!--</div>-->
                         <div class="test-feed bounceInRight" data-delighter="start:0.80">
                             <div class="heading2">H.H Sheikh Humaid Rashid Humaid Abdulla Alqassimi</div>
-                            <p>SpiderWorks&#039; expertise, creativity, and dedication have transformed our online
-                                presence, allowing us to effectively communicate our mission of providing top-notch
-                                nursing and care services in Dubai. Thanks to their strategic approach, our website not
-                                only reflects the essence of Marhaba Care but also engages our audience effectively. We
-                                highly appreciate and thank SpiderWorks for their outstanding work and would
-                                wholeheartedly recommend their services to any organization seeking excellence in
-                                digital marketing.</p>
+                            <p>Modalife's expertise, creativity, and dedication have transformed our online presence,
+                                allowing us to effectively communicate our mission of providing top-notch nursing and
+                                care services in Dubai. Thanks to their strategic approach, our website not only
+                                reflects the essence of Marhaba Care but also engages our audience effectively. We
+                                highly appreciate and thank Modalife for their outstanding work and would wholeheartedly
+                                recommend their services to any organization seeking excellence in digital marketing.
+                            </p>
                         </div>
+                        <!-- Testimonial Icon Section -->
                         <div class="icon-with-name">
                             <div class="icon-test">
                                 <img src="public/img/media/IMG_5167a6571963f7bd6a.jpg" alt="" title="">
@@ -1102,74 +1114,57 @@
                         </div>
                     </div>
                 </div><!-- .single-portfolio END -->
+
+                <!-- Repeat for more portfolio items -->
                 <div class="single-portfolio">
-                    <img src="public/img/media/Charles%20D61b865154227f.jpg" alt="Charles D Managing Director CDA Audit"
-                        title="Charles D Managing Director CDA Audit">
+                    <img src="public/img/media/IMG_5167a6571963f7bd6a.jpg" alt="" title="">
                     <div class="testimonial-detail">
-                        <!--<div class="test-quote tl-time bounceInRight" data-delighter="start:0.60">-->
-                        <!--    <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" data-name="Capa 1" viewBox="0 0 975.04 860.64"><path d="M50,917.84H354a50,50,0,0,0,50-50v-304a50,50,0,0,0-50-50H208.5q2.85-119.4,55.4-191.2,41.4-56.7,125.3-93.8a49.93,49.93,0,0,0,24.8-67.1l-36-76a50,50,0,0,0-65.1-24.4q-99.3,42.9-167.7,108.8Q61.8,250.69,30.9,352T0,628.84v239A50,50,0,0,0,50,917.84Z" transform="translate(0 -57.2)"/><path d="M869,61.54q-98.1,42.75-166.9,108.6-84.15,80.55-115,181.2t-30.9,277.5v239a50,50,0,0,0,50,50h304a50,50,0,0,0,50-50v-304a50,50,0,0,0-50-50H764.7q2.85-119.4,55.4-191.2,41.4-56.7,125.3-93.8a49.93,49.93,0,0,0,24.8-67.1l-35.9-75.8A50.14,50.14,0,0,0,869,61.54Z" transform="translate(0 -57.2)"/></svg>-->
-                        <!--</div>-->
-                        <!--<div class="test-pro tl-time bounceInRight" data-delighter="start:0.70">-->
-                        <!--    <span>Managing Director, Charles &amp; Darwish Associates UAE</span>-->
-                        <!--</div>-->
                         <div class="test-feed bounceInRight" data-delighter="start:0.80">
-                            <div class="heading2">Charles D</div>
-                            <p>We have known and been working with SpiderWorks Technologies for the last few years, for
-                                our website development and digital marketing needs. Needless to say, we are very happy
-                                with the quality of service and uninterrupted support they provide. Also, the team is
-                                up-to-date on digital trends and advanced technologies. They have always kept our best
-                                interests at heart and continue to deliver remarkable performance. Looking forward to
-                                more wonderful years of association with Team SpiderWorks!</p>
+                            <div class="heading2">Another Testimonial Name</div>
+                            <p>This is another testimonial description for a different client. Modalife continues to
+                                deliver excellence in digital marketing, helping businesses reach new heights.</p>
                         </div>
+                        <!-- Testimonial Icon Section -->
                         <div class="icon-with-name">
                             <div class="icon-test">
-                                <img src="public/img/media/Charles%20D61b865154227f.jpg"
-                                    alt="Charles D Managing Director CDA Audit"
-                                    title="Charles D Managing Director CDA Audit">
+                                <img src="public/img/media/IMG_5167a6571963f7bd6a.jpg" alt="" title="">
                             </div>
                             <div class="icon-name">
-                                <h3>Charles D</h3>
-                                <span>Managing Director, Charles &amp; Darwish Associates UAE</span>
+                                <h3>Another Client Name</h3>
+                                <span>Position</span>
                             </div>
                         </div>
                     </div>
-                </div><!-- .single-portfolio END -->
+
+                </div>
+                <!-- .single-portfolio END -->
+                <!-- Repeat for more portfolio items -->
                 <div class="single-portfolio">
-                    <img src="public/img/media/Digital%20Marketing%20client%20-%20Hykon60b75cb560d3c.jpeg"
-                        alt="Hykon Marketing Client" title="Hykon Marketing Client">
+                    <img src="public/img/media/IMG_5167a6571963f7bd6a.jpg" alt="" title="">
                     <div class="testimonial-detail">
-                        <!--<div class="test-quote tl-time bounceInRight" data-delighter="start:0.60">-->
-                        <!--    <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" data-name="Capa 1" viewBox="0 0 975.04 860.64"><path d="M50,917.84H354a50,50,0,0,0,50-50v-304a50,50,0,0,0-50-50H208.5q2.85-119.4,55.4-191.2,41.4-56.7,125.3-93.8a49.93,49.93,0,0,0,24.8-67.1l-36-76a50,50,0,0,0-65.1-24.4q-99.3,42.9-167.7,108.8Q61.8,250.69,30.9,352T0,628.84v239A50,50,0,0,0,50,917.84Z" transform="translate(0 -57.2)"/><path d="M869,61.54q-98.1,42.75-166.9,108.6-84.15,80.55-115,181.2t-30.9,277.5v239a50,50,0,0,0,50,50h304a50,50,0,0,0,50-50v-304a50,50,0,0,0-50-50H764.7q2.85-119.4,55.4-191.2,41.4-56.7,125.3-93.8a49.93,49.93,0,0,0,24.8-67.1l-35.9-75.8A50.14,50.14,0,0,0,869,61.54Z" transform="translate(0 -57.2)"/></svg>-->
-                        <!--</div>-->
-                        <!--<div class="test-pro tl-time bounceInRight" data-delighter="start:0.70">-->
-                        <!--    <span>Manager - Digital Marketing, Hykon India Pvt. Ltd.</span>-->
-                        <!--</div>-->
                         <div class="test-feed bounceInRight" data-delighter="start:0.80">
-                            <div class="heading2">Simon K A</div>
-                            <p>We have associated with SpiderWork for our Digital marketing &amp; eCommerce website
-                                development activities. We were glad to associate with them since the support &amp; work
-                                quality was of high class. We used to get good appreciation from customers regarding
-                                unique designs. The website they developed is user-friendly &amp; one of the best in the
-                                industry. We used to get a good amount of leads from our website itself.
-
-                                Overall, we were 100% satisfied with the support SpiderWorks team has given us.
-
-                                Thank you SpiderWorks</p>
+                            <div class="heading2">Another Testimonial Name</div>
+                            <p>This is another testimonial description for a different client. Modalife continues to
+                                deliver excellence in digital marketing, helping businesses reach new heights.</p>
                         </div>
+                        <!-- Testimonial Icon Section -->
                         <div class="icon-with-name">
                             <div class="icon-test">
-                                <img src="public/img/media/Digital%20Marketing%20client%20-%20Hykon60b75cb560d3c.jpeg"
-                                    alt="Hykon Marketing Client" title="Hykon Marketing Client">
+                                <img src="public/img/media/IMG_5167a6571963f7bd6a.jpg" alt="" title="">
                             </div>
                             <div class="icon-name">
-                                <h3>Simon K A</h3>
-                                <span>Manager - Digital Marketing, Hykon India Pvt. Ltd.</span>
+                                <h3>Another Client Name</h3>
+                                <span>Position</span>
                             </div>
                         </div>
                     </div>
-                </div><!-- .single-portfolio END -->
+
+                </div>
+
+                <!-- Add more portfolio items as needed -->
             </div>
         </div>
+
     </section>
     <!--portfolio area section end -->
     <section class="trusted-brands ptb60">
@@ -1202,12 +1197,12 @@
                                     title="Pittappillil Logo" style="width:118px;">
                             </div>
                             <div class="cl-single" style="background-color: #231F20">
-                                <img src="public/img/media/logo5edce35a613225feb2e1547cc5.png" alt="Fone 4 - Client Logo"
-                                    title="Fone 4 - Client Logo" style="width:118px;">
+                                <img src="public/img/media/logo5edce35a613225feb2e1547cc5.png"
+                                    alt="Fone 4 - Client Logo" title="Fone 4 - Client Logo" style="width:118px;">
                             </div>
                             <div class="cl-single" style="background-color: #410F11">
-                                <img src="public/img/media/Abad%20Logo602df5eb13a5b.png" alt="Abad Logo" title="Abad Logo"
-                                    style="width:118px;">
+                                <img src="public/img/media/Abad%20Logo602df5eb13a5b.png" alt="Abad Logo"
+                                    title="Abad Logo" style="width:118px;">
                             </div>
                             <div class="cl-single" style="background-color: #FFFFFF">
                                 <img src="public/img/media/Barrat%20Logo602df6ae06431.png" alt="Barrat Logo"
@@ -1224,8 +1219,8 @@
                                     title="Emaar Logo" style="width:118px;">
                             </div>
                             <div class="cl-single" style="background-color: #E20000">
-                                <img src="public/img/media/Indus%20Motors%20Logo602df75090445.png" alt="Indus Motors Logo"
-                                    title="Indus Motors Logo" style="width:118px;">
+                                <img src="public/img/media/Indus%20Motors%20Logo602df75090445.png"
+                                    alt="Indus Motors Logo" title="Indus Motors Logo" style="width:118px;">
                             </div>
                             <div class="cl-single" style="background-color: #FFFFFF">
                                 <img src="public/img/media/kitex%20Logo602df78dae79c.png" alt="kitex Logo"
@@ -1266,7 +1261,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5">
+                <!-- <div class="col-md-5">
                     <div class="cl-see-text">
                         <div class="c-more">
                             <span class="from-bottom animation-element">Dive-in to learn about our marketing portfolio
@@ -1276,7 +1271,7 @@
                                     class="sp-ex"></span>Contact Us</a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>
@@ -1308,7 +1303,7 @@
                             <div class="heading2">Fill-in and <span>Reach Out</span></div>
                         </div>
                         <div class="es-form">
-                            <form action="https://www.spiderworks.ae/contact-us/save" method="POST" id="contactFrm"
+                            <form action="https://www.modalife.ae/contact-us/save" method="POST" id="contactFrm"
                                 class="panel">
                                 <input type="hidden" name="_token" value="YFbamwizWT3ZwJXHIjkErYwlxrvbq0AcMaFgsngK">
                                 <input type="hidden" name="type" value="Web Common">
@@ -1383,7 +1378,7 @@
                 </div>
                 <div class="col-md-4">
                     <div class="sp-icon">
-                        <img src="public/img/media/sw-bl5ff2dfabe2f0f.png" alt="Spiderworks Logo" title="Spiderworks Logo"
+                        <img src="public/img/media/sw-bl5ff2dfabe2f0f.png" alt="modalife Logo" title="modalife Logo"
                             class="sp-1">
                         <img src="public/img/sw-bl-top.png" alt="" class="sp-2">
                     </div>
@@ -1399,7 +1394,7 @@
                             </div>
                             <div class="sl-desc col-11">
                                 <h4>Passionate Team</h4>
-                                <p>The passion-driven professionals at SpiderWorks Technologies are at your service
+                                <p>The passion-driven professionals at modalife Technologies are at your service
                                     24x7. Reach out to us to make your brand successful.</p>
                             </div>
                         </div>
@@ -1469,8 +1464,8 @@
                     </div>
                 </div>
     </section>
-    <!-- end -->
-    <section class="case-studies ptb60">
+     <!-- end -->
+     <section class="case-studies ptb60">
         <div class="container">
             <div class="cs-hd big-tag">
                 <h2>Case Studies</h2>
@@ -1488,11 +1483,11 @@
                                 <div class="cssi-para">
                                     <p>Kiltons Business Setup Services LLC is one of the leading business setup services
                                         across the UAE providing unparalleled business services for those who desire to
-                                        start an initiative by leveraging the UAE market. SpiderWorks associated with
+                                        start an initiative by leveraging the UAE market. modalife associated with
                                         Kiltons to handle the SEO, PPC, and Social Media Marketing for the UAE location.
                                         Right from a structured website to an established presence over the Internet, we
                                         help Kiltons grow and emerge as one of the top business service providers across
-                                        the Middle East. From nowhere in the top 100s of Google SERP, SpiderWorks has
+                                        the Middle East. From nowhere in the top 100s of Google SERP, modalife has
                                         improved the SEO performance of our client, ranking 120+ keywords on the first
                                         page of the search results, and increasing social media audience by 3K+ users.
                                     </p>
@@ -1533,7 +1528,7 @@
                                 <div class="cssi-para">
                                     <p>CDA Accounting and Bookkeeping Services LLC is one of the leading accounting and
                                         auditing firms in Dubai, providing outstanding financial services across the UAE
-                                        for more than a decade. CDA’s association with SpiderWorks was to establish
+                                        for more than a decade. CDA’s association with modalife was to establish
                                         their online presence, SEO footprint and to improve keyword ranking and organic
                                         traffic. With our perfect strategic plans and digital marketing efforts, we
                                         ranked CDA in the first of Google SERP for more than 150 keywords and generated
@@ -1580,11 +1575,11 @@
                                 </div>
                                 <div class="cssi-para">
                                     <p>Sage Education Services, a renowned tutoring and admission consulting service
-                                        provider in Dubai, UAE, partnered with SpiderWorks to improve their online
-                                        presence, keyword ranking and traffic to the website. SpiderWorks has been
+                                        provider in Dubai, UAE, partnered with modalife to improve their online
+                                        presence, keyword ranking and traffic to the website. modalife has been
                                         collaborating with Sage for more than two years providing digital marketing
                                         services including SEO, Social Media Marketing, and Google Ads. Through this
-                                        association, SpiderWorks could rank more than 60+ high search volume keywords of
+                                        association, modalife could rank more than 60+ high search volume keywords of
                                         Sage to the top positions of Google SERP and generate high traffic to the
                                         website. When we reach our 2+ years of association, we could grow the total
                                         number of visitors to the Sage website by 88%, and the total organic traffic by
@@ -1651,9 +1646,8 @@
             </div>
         </div>
     </section>
-    <!-- sidebar cart item -->
-    <!-- FAQ -->
-    <div class="os_inner_faq_topics_wrapper animated-row pb100">
+     <!-- FAQ -->
+     <div class="os_inner_faq_topics_wrapper animated-row pb100">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -1664,331 +1658,153 @@
                 </div>
                 <div class="category_accordion col-md-12">
                     <div id="accordion" role="tablist">
+                        
+                        <!-- Card 1 -->
                         <div class="card">
                             <!-- Card Title -->
-                            <div class="card_pagee" role="tab" id="headingOne">
+                            <div class="card_pagee" role="tab" id="heading0">
                                 <h5 class="h5-md">
-                                    <a data-toggle="collapse" aria-expanded="true" href="index.html#collapse0"
-                                        role="button" aria-controls="collapse0">
-                                        1. How long has SpiderWorks been in the digital marketing business?
+                                    <a data-toggle="collapse" aria-expanded="true" href="#collapse0" role="button" aria-controls="collapse0">
+                                        1. How long has modalife been in the digital marketing business?
                                     </a>
                                 </h5>
                             </div>
                             <!-- Card Content -->
-                            <div id="collapse0" class="collapse  show " role="tabpanel" aria-labelledby="heading0"
-                                data-parent="#accordion" style="">
+                            <div id="collapse0" class="collapse show" role="tabpanel" aria-labelledby="heading0" data-parent="#accordion">
                                 <div class="card-body">
                                     <div class="card_cntnt">
-                                        <div>Established in 2005, we have been providing trustworthy services in the
-                                            digital world for more than one and a half decades.</div>
+                                        <div>Established in 2005, we have been providing trustworthy services in the digital world for more than one and a half decades.</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                
+                        <!-- Card 2 -->
                         <div class="card">
                             <!-- Card Title -->
-                            <div class="card_pagee" role="tab" id="headingOne">
+                            <div class="card_pagee" role="tab" id="heading1">
                                 <h5 class="h5-md">
-                                    <a data-toggle="collapse" aria-expanded="false" class="collapsed"
-                                        href="index.html#collapse1" role="button" aria-controls="collapse1">
+                                    <a data-toggle="collapse" aria-expanded="false" class="collapsed" href="#collapse1" role="button" aria-controls="collapse1">
                                         2. What are the services you offer in UAE?
                                     </a>
                                 </h5>
                             </div>
                             <!-- Card Content -->
-                            <div id="collapse1" class="collapse " role="tabpanel" aria-labelledby="heading1"
-                                data-parent="#accordion" style="">
+                            <div id="collapse1" class="collapse" role="tabpanel" aria-labelledby="heading1" data-parent="#accordion">
                                 <div class="card-body">
                                     <div class="card_cntnt">
-                                        <p>We offer comprehensive web design and development, mobile app development and
-                                            digital marketing services in Dubai and other emirates of UAE. Our services
-                                            include&nbsp;<a href="social-media-marketing.html" target="_blank">social
-                                                media marketing</a>, <a href="online-advertising.html"
-                                                target="_blank">online advertising</a>, PPC, Email marketing, <a
-                                                href="seo-services.html" target="_blank">SEO</a>, <a
-                                                href="content-marketing.html" target="_blank">content marketing</a>, <a
-                                                href="it-solutions-company.html" target="_blank">managed IT services</a>
-                                            and so on.&nbsp;</p>
+                                        <p>We offer comprehensive web design and development, mobile app development and digital marketing services in Dubai and other emirates of UAE. Our services include <a href="social-media-marketing.html" target="_blank">social media marketing</a>, <a href="online-advertising.html" target="_blank">online advertising</a>, PPC, Email marketing, <a href="seo-services.html" target="_blank">SEO</a>, <a href="content-marketing.html" target="_blank">content marketing</a>, <a href="it-solutions-company.html" target="_blank">managed IT services</a> and so on.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                
+                        <!-- Card 3 -->
                         <div class="card">
                             <!-- Card Title -->
-                            <div class="card_pagee" role="tab" id="headingOne">
+                            <div class="card_pagee" role="tab" id="heading2">
                                 <h5 class="h5-md">
-                                    <a data-toggle="collapse" aria-expanded="false" class="collapsed"
-                                        href="index.html#collapse2" role="button" aria-controls="collapse2">
-                                        3. What makes SpiderWorks different from other digital marketing companies in
-                                        Dubai?
+                                    <a data-toggle="collapse" aria-expanded="false" class="collapsed" href="#collapse2" role="button" aria-controls="collapse2">
+                                        3. What makes modalife different from other digital marketing companies in Dubai?
                                     </a>
                                 </h5>
                             </div>
                             <!-- Card Content -->
-                            <div id="collapse2" class="collapse " role="tabpanel" aria-labelledby="heading2"
-                                data-parent="#accordion" style="">
+                            <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2" data-parent="#accordion">
                                 <div class="card-body">
                                     <div class="card_cntnt">
-                                        <p>SpiderWorks is proud to have a team of experienced professionals. Optimistic
-                                            attitude and relentless commitment are what distinguish us from other
-                                            digital marketing companies in Dubai.</p>
+                                        <p>modalife is proud to have a team of experienced professionals. Optimistic attitude and relentless commitment are what distinguish us from other digital marketing companies in Dubai.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                
+                        <!-- Card 4 -->
                         <div class="card">
                             <!-- Card Title -->
-                            <div class="card_pagee" role="tab" id="headingOne">
+                            <div class="card_pagee" role="tab" id="heading3">
                                 <h5 class="h5-md">
-                                    <a data-toggle="collapse" aria-expanded="false" class="collapsed"
-                                        href="index.html#collapse3" role="button" aria-controls="collapse3">
+                                    <a data-toggle="collapse" aria-expanded="false" class="collapsed" href="#collapse3" role="button" aria-controls="collapse3">
                                         4. How much do you charge for your digital marketing services in Dubai?
                                     </a>
                                 </h5>
                             </div>
                             <!-- Card Content -->
-                            <div id="collapse3" class="collapse " role="tabpanel" aria-labelledby="heading3"
-                                data-parent="#accordion" style="">
+                            <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3" data-parent="#accordion">
                                 <div class="card-body">
                                     <div class="card_cntnt">
-                                        <p>We offer competitively priced packages for all the services we offer. Since
-                                            the pricing for most of our services depend on the specific requirements you
-                                            have, contact us now, to know the charges for a particular service. We are
-                                            sure we can offer you the best packages in Dubai.</p>
+                                        <p>We offer competitively priced packages for all the services we offer. Since the pricing for most of our services depend on the specific requirements you have, contact us now, to know the charges for a particular service. We are sure we can offer you the best packages in Dubai.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                
+                        <!-- Card 5 -->
                         <div class="card">
                             <!-- Card Title -->
-                            <div class="card_pagee" role="tab" id="headingOne">
+                            <div class="card_pagee" role="tab" id="heading4">
                                 <h5 class="h5-md">
-                                    <a data-toggle="collapse" aria-expanded="false" class="collapsed"
-                                        href="index.html#collapse4" role="button" aria-controls="collapse4">
+                                    <a data-toggle="collapse" aria-expanded="false" class="collapsed" href="#collapse4" role="button" aria-controls="collapse4">
                                         5. What are your most significant strategies in digital marketing?
                                     </a>
                                 </h5>
                             </div>
                             <!-- Card Content -->
-                            <div id="collapse4" class="collapse " role="tabpanel" aria-labelledby="heading4"
-                                data-parent="#accordion" style="">
+                            <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4" data-parent="#accordion">
                                 <div class="card-body">
                                     <div class="card_cntnt">
-                                        <p>The strategy we formulate and execute will depend on the client’s goals and
-                                            requirements. Our experience in promoting businesses in Dubai can help us
-                                            come up with the right digital marketing strategy for you.</p>
+                                        <p>The strategy we formulate and execute will depend on the client’s goals and requirements. Our experience in promoting businesses in Dubai can help us come up with the right digital marketing strategy for you.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                
+                        <!-- Additional Cards go here with the same structure -->
+                        <!-- Make sure the IDs and aria-labelledby are unique for each card -->
+                        <!-- Example for another card below: -->
+                
+                        <!-- Card 6 -->
                         <div class="card">
                             <!-- Card Title -->
-                            <div class="card_pagee" role="tab" id="headingOne">
+                            <div class="card_pagee" role="tab" id="heading5">
                                 <h5 class="h5-md">
-                                    <a data-toggle="collapse" aria-expanded="false" class="collapsed"
-                                        href="index.html#collapse5" role="button" aria-controls="collapse5">
+                                    <a data-toggle="collapse" aria-expanded="false" class="collapsed" href="#collapse5" role="button" aria-controls="collapse5">
                                         6. Do you have experience working with businesses in different industries?
                                     </a>
                                 </h5>
                             </div>
                             <!-- Card Content -->
-                            <div id="collapse5" class="collapse " role="tabpanel" aria-labelledby="heading5"
-                                data-parent="#accordion" style="">
+                            <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5" data-parent="#accordion">
                                 <div class="card-body">
                                     <div class="card_cntnt">
-                                        <p>Yes, we are fortunate to work with several businesses in Dubai from different
-                                            sectors, since 2005. That has helped us in obtaining comprehensive insight
-                                            into different business fields in several countries.&nbsp;</p>
+                                        <p>Yes, we are fortunate to work with several businesses in Dubai from different sectors, since 2005. That has helped us in obtaining comprehensive insight into different business fields in several countries.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <!-- Card Title -->
-                            <div class="card_pagee" role="tab" id="headingOne">
-                                <h5 class="h5-md">
-                                    <a data-toggle="collapse" aria-expanded="false" class="collapsed"
-                                        href="index.html#collapse6" role="button" aria-controls="collapse6">
-                                        7. What are the departments you have in your company?
-                                    </a>
-                                </h5>
-                            </div>
-                            <!-- Card Content -->
-                            <div id="collapse6" class="collapse " role="tabpanel" aria-labelledby="heading6"
-                                data-parent="#accordion" style="">
-                                <div class="card-body">
-                                    <div class="card_cntnt">
-                                        <p>Our core teams include <a href="social-media-marketing.html"
-                                                target="_blank">social media marketing</a>, <a href="seo-services.html"
-                                                target="_blank">search engine optimisation</a>, <a
-                                                href="influencer-marketing.html" target="_blank">influencer
-                                                marketing</a>, <a href="web-development-company.html"
-                                                target="_blank">website development</a>, <a
-                                                href="ecommerce-development.html" target="_blank">e-commerce
-                                                development</a>.&nbsp;</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <!-- Card Title -->
-                            <div class="card_pagee" role="tab" id="headingOne">
-                                <h5 class="h5-md">
-                                    <a data-toggle="collapse" aria-expanded="false" class="collapsed"
-                                        href="index.html#collapse7" role="button" aria-controls="collapse7">
-                                        8. How many employees do you have in Dubai and what are their qualifications?
-                                    </a>
-                                </h5>
-                            </div>
-                            <!-- Card Content -->
-                            <div id="collapse7" class="collapse " role="tabpanel" aria-labelledby="heading7"
-                                data-parent="#accordion" style="">
-                                <div class="card-body">
-                                    <div class="card_cntnt">
-                                        <p>SpiderWorks maintains the leading position among digital marketing agencies
-                                            in Dubai/ UAE through the highly qualified and experienced professionals
-                                            working with us. We have a handpicked team of 40+ professionals with the
-                                            highest qualifications in their field, supporting us from our back office in
-                                            India.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <!-- Card Title -->
-                            <div class="card_pagee" role="tab" id="headingOne">
-                                <h5 class="h5-md">
-                                    <a data-toggle="collapse" aria-expanded="false" class="collapsed"
-                                        href="index.html#collapse8" role="button" aria-controls="collapse8">
-                                        9. What tools do you use for digital marketing campaigns?
-                                    </a>
-                                </h5>
-                            </div>
-                            <!-- Card Content -->
-                            <div id="collapse8" class="collapse " role="tabpanel" aria-labelledby="heading8"
-                                data-parent="#accordion" style="">
-                                <div class="card-body">
-                                    <div class="card_cntnt">
-                                        <p>Our primary aim is to obtain optimal organic reach for our clients. This will
-                                            obviate high expenses and is a cost-effective method. We use SEO, Content
-                                            Marketing, Videos, Social Media Posts, Email and other tools depending on
-                                            the type of business.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <!-- Card Title -->
-                            <div class="card_pagee" role="tab" id="headingOne">
-                                <h5 class="h5-md">
-                                    <a data-toggle="collapse" aria-expanded="false" class="collapsed"
-                                        href="index.html#collapse9" role="button" aria-controls="collapse9">
-                                        10. How is your reporting pattern?
-                                    </a>
-                                </h5>
-                            </div>
-                            <!-- Card Content -->
-                            <div id="collapse9" class="collapse " role="tabpanel" aria-labelledby="heading9"
-                                data-parent="#accordion" style="">
-                                <div class="card-body">
-                                    <div class="card_cntnt">
-                                        <p>Although we will have multiple members working on the project simultaneously,
-                                            depending on the objectives and scope of work, a designated manager will
-                                            render you a detailed report periodically. The digital marketing report
-                                            containing analytical data will help you understand the performance of your
-                                            company in Dubai.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <!-- Card Title -->
-                            <div class="card_pagee" role="tab" id="headingOne">
-                                <h5 class="h5-md">
-                                    <a data-toggle="collapse" aria-expanded="false" class="collapsed"
-                                        href="index.html#collapse10" role="button" aria-controls="collapse10">
-                                        11. How long will it take to see results?
-                                    </a>
-                                </h5>
-                            </div>
-                            <!-- Card Content -->
-                            <div id="collapse10" class="collapse " role="tabpanel" aria-labelledby="heading10"
-                                data-parent="#accordion" style="">
-                                <div class="card-body">
-                                    <div class="card_cntnt">
-                                        <p>Digital marketing methodologies including Social Media Marketing and Online
-                                            Advertising will render you with immediate outcome. However, services like
-                                            SEO may take 03 months to several months depending on varying parameters
-                                            including competition. Nonetheless, we ensure that the campaign turns
-                                            productive in the shortest possible time.&nbsp;&nbsp;</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <!-- Card Title -->
-                            <div class="card_pagee" role="tab" id="headingOne">
-                                <h5 class="h5-md">
-                                    <a data-toggle="collapse" aria-expanded="false" class="collapsed"
-                                        href="index.html#collapse11" role="button" aria-controls="collapse11">
-                                        12. How is the agency-client relationship and communication happens?
-                                    </a>
-                                </h5>
-                            </div>
-                            <!-- Card Content -->
-                            <div id="collapse11" class="collapse " role="tabpanel" aria-labelledby="heading11"
-                                data-parent="#accordion" style="">
-                                <div class="card-body">
-                                    <div class="card_cntnt">
-                                        <p>We will have periodic video calls, zoom meetings and one-to-one discussions
-                                            as per the requirement. Further, feel free to contact our office in Dubai
-                                            any time of the day via phone, email or WhatsApp.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <!-- Card Title -->
-                            <div class="card_pagee" role="tab" id="headingOne">
-                                <h5 class="h5-md">
-                                    <a data-toggle="collapse" aria-expanded="false" class="collapsed"
-                                        href="index.html#collapse12" role="button" aria-controls="collapse12">
-                                        13. Do you have in-depth experience with content marketing?
-                                    </a>
-                                </h5>
-                            </div>
-                            <!-- Card Content -->
-                            <div id="collapse12" class="collapse " role="tabpanel" aria-labelledby="heading12"
-                                data-parent="#accordion" style="">
-                                <div class="card-body">
-                                    <div class="card_cntnt">
-                                        <p>SpiderWorks has a team of talented content creators with immense experience
-                                            in the field. We assure you best quality, search engine optimized, contents
-                                            to enhance your online presence.&nbsp;</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                
+                        <!-- Repeat the structure for the remaining cards -->
+                
                     </div>
                 </div>
+                
             </div>
 
         </div>
     </div>
-    <!-- end -->
     <section class="footer-main-content">
         <div class="ep-ftr ptb60">
             <div class="container">
                 <div class="ep-details">
                     <p></p>
-                    <h2>SpiderWorks: The Trusted Digital Marketing Agency in Dubai</h2>Information technology has
+                    <h2>modalife: The Trusted Digital Marketing Agency in Dubai</h2>Information technology has
                     transformed the marketing scenario across the globe. Companies and organizations have to incorporate
                     advanced marketing methodologies if they want to mark their presence felt. The digital footprint is
                     of paramount importance for any entity to gain momentum and attain growth. Predominantly, the
                     arrival of Google in 1998 was the fundamental aspect that resulted in the IT boom. Coincidentally,
                     our founder Tony John commenced his journey in the digital world, in the same year, 1998, in the US.
                     <p></p>
-                    <p>SpiderWorks, the leading digital solutions provider in Dubai was established in 2005 in its home
+                    <p>modalife, the leading digital solutions provider in Dubai was established in 2005 in its home
                         country. Under the visionary leadership of Tony John, with the knowledge, he garnered whilst
                         working for multinational companies and business giants including Hewlett Packard (India &amp;
                         USA), Bank of America, Home Depot, Microsoft (India), BroadVision, Omnicell, and Omron
@@ -2049,7 +1865,7 @@
                         develop a custom-tailored website that will act as a perfect interface between your brand and
                         customers. A clutter-free website that delivers outstanding user experience (UX) necessitates an
                         understanding of user psychology, perception, and views. The web designing and development team
-                        at SpiderWorks has acquired an immense understanding of the field, through years of
+                        at modalife has acquired an immense understanding of the field, through years of
                         experience.&nbsp;&nbsp;</p>
                     <p><b><a href="mobile-app-development.html" target="_blank">Mobile App Development</a></b> – Mobile
                         applications have turned out to be the bridge that connects users with the brand. A thoughtfully
@@ -2059,7 +1875,7 @@
                         Swiftic.</p>
                     <p><b><a href="web-hosting.html" target="_blank">Web Hosting</a></b> – We offer safe and secure web
                         hosting solutions. Reach out to us for web hosting requirements according to your choice. The
-                        web hosting services provided by SpiderWorks include Cloud Hosting Services, Dedicated Hosting,
+                        web hosting services provided by modalife include Cloud Hosting Services, Dedicated Hosting,
                         Colocation Hosting, Shared Linux Hosting, and Shared Windows Hosting. The assured reliability of
                         the services makes us one of the best digital marketing agencies in Dubai that provide web
                         hosting.</p>
@@ -2073,7 +1889,7 @@
                         other region can perform well without in-depth research and knowledge about the business. We
                         undertake detailed client research to understand the business and prospective areas that can be
                         explored to reap phenomenal results.&nbsp;&nbsp;</p>
-                    <p><b>Proposal</b> – The comprehensive proposal submitted by SpiderWorks will contain concepts for
+                    <p><b>Proposal</b> – The comprehensive proposal submitted by modalife will contain concepts for
                         commencing digital marketing, the way ahead for ensuring exceptional reach, the budget-friendly
                         tactics that can take the brand to maximum users, and optimization methods to reduce bounce
                         rates and increase conversions.</p>
@@ -2097,7 +1913,7 @@
                     <p></p>
                     <h4>Why Choose Us?</h4>
                     <p></p>
-                    <p>SpiderWorks has been the best and preferred digital marketing agency in Dubai, UAE.&nbsp; The
+                    <p>modalife has been the best and preferred digital marketing agency in Dubai, UAE.&nbsp; The
                         experience we have gained over one and a half decades, since its inception in 2005 in its home
                         state, has delivered us with great insight into the digital world. Understanding the subtle
                         nuances and complexities of the web world, we are able to render results to our valued
@@ -2122,26 +1938,6 @@
             </div>
         </div>
     </section>
-    <!-- sidebar common -->
-    <div class="xs-sidebar-group cart-group">
-        <div class="xs-overlay black-bg"></div>
-        <div class="xs-sidebar-widget">
-            <div class="sidebar-widget-container">
-                <div class="widget-heading media">
-                    <div class="media-body">
-                        <a href="index.html#" class="close-side-widget">
-                            X
-                        </a>
-                    </div>
-                </div>
-                <div class="xs-empty-content">
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- END sidebar cart item -->
-    <!-- END sidebar widget item -->
     <footer class="xs-footer-section footer-style5" data-delighter="start:0.80">
         <div class="footer-top-area">
             <div class="container">
@@ -2155,13 +1951,13 @@
                                     <li>
                                         <a class="" href="digital-marketing.html">Digital Marketing</a>
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                         <a class="" href="seo-services.html">Search Engine Optimization</a>
-                                    </li>
+                                    </li> -->
                                     <li>
                                         <a class="" href="social-media-marketing.html">Social Media Marketing</a>
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                         <a class="" href="lead-generation.html">Lead Generation</a>
                                     </li>
                                     <li>
@@ -2186,7 +1982,7 @@
                                     <li>
                                         <a class="" href="digital-transformation-services.html">Digital Transformation
                                             Services</a>
-                                    </li>
+                                    </li> -->
                                 </ul><!-- .xs-list END -->
                             </div><!-- .footer-widget END -->
                         </div>
@@ -2203,14 +1999,14 @@
                                     <li>
                                         <a class="" href="mobile-app-development.html">Mobile App Development</a>
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                         <a class="" href="custom-website-development.html">Custom Website
                                             Development</a>
                                     </li>
                                     <li>
                                         <a class="" href="web-hosting.html">Web Hosting</a>
-                                    </li>
-                                    <li>
+                                    </li> -->
+                                    <!-- <li>
                                         <a class="" href="ecommerce-development.html">ECommerce Solutions</a>
                                     </li>
                                     <li>
@@ -2232,7 +2028,7 @@
                                         <a class="" href="php-development.html">PHP Development</a>
                                     </li>
                                     <li>
-                                        <a class="" href="crm-development.html">CRM Development</a>
+                                        <a class="" href="crm-development.html">CRM Development</a> -->
                                     </li>
                                 </ul><!-- .xs-list END -->
                             </div><!-- .footer-widget END -->
@@ -2246,7 +2042,7 @@
                                     <li>
                                         <a class="" href="branding.html">Branding</a>
                                     </li>
-                                    <li>
+                                    <!-- <li>
                                         <a class="" href="influencer-marketing.html">Influencer Marketing</a>
                                     </li>
                                     <li>
@@ -2267,7 +2063,7 @@
                                     </li>
                                     <li>
                                         <a class="" href="video-marketing-services.html">Video Marketing</a>
-                                    </li>
+                                    </li> -->
                                     <li>
                                         <a class="" href="business-cards.html">Business Cards</a>
                                     </li>
@@ -2287,11 +2083,11 @@
                     <div class="col-md-6">
                         <div class="socials">
                             <div class="ss-logo">
-                                <img src="public/img/logo-sw.png" alt="">
+                                <img src="theme/web/img/logo-sw.png" alt="">
                             </div>
                             <div class="ss-icons-social--footer">
                                 <div class="ss-single" id="fb">
-                                    <a href="https://www.facebook.com/SpiderWorksTechnologies/" target="_blank">
+                                    <a href="" target="_blank">
                                         <svg xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px"
                                             y="0px" width="96.124px" height="96.123px" viewBox="0 0 96.124 96.123"
@@ -2305,7 +2101,7 @@
                                     </a>
                                 </div>
                                 <div class="ss-single" id="insta">
-                                    <a href="https://www.instagram.com/spiderworkstechnologies/" target="_blank">
+                                    <a href="" target="_blank">
                                         <svg xmlns="http://www.w3.org/2000/svg" id="Bold"
                                             enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24"
                                             width="512">
@@ -2320,7 +2116,7 @@
                                     </a>
                                 </div>
                                 <div class="ss-single" id="linked_in">
-                                    <a href="https://www.linkedin.com/company/spiderworks/" target="_blank">
+                                    <a href="" target="_blank">
                                         <svg xmlns="http://www.w3.org/2000/svg" id="Bold"
                                             enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24"
                                             width="512">
@@ -2336,7 +2132,7 @@
                                 </div>
 
                                 <div class="ss-single" id="twit">
-                                    <a href="https://twitter.com/SpiderWorksTech" target="_blank">
+                                    <a href="" target="_blank">
                                         <svg xmlns="http://www.w3.org/2000/svg" id="Bold"
                                             enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24"
                                             width="512">
@@ -2347,7 +2143,7 @@
                                     </a>
                                 </div>
                                 <div class="ss-single" id="youtube">
-                                    <a href="https://www.youtube.com/channel/UCFFZNDoZJYYMBMhId_VKT2g" target="_blank">
+                                    <a href="" target="_blank">
                                         <svg xmlns="http://www.w3.org/2000/svg" id="Bold"
                                             enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24"
                                             width="512">
@@ -2364,13 +2160,13 @@
                         <div class="dp-detail">
                             <div class="loc-phone">
                                 <div class="location">
-                                    <img src="public/img/loc-icon.png" alt="">
-                                    <span>G06, Bin Thani Building, Near Hilal Bank, Al Qusais, Dubai, UAE. P.O. Box
-                                        237739</span>
+                                    <img src="theme/web/img/loc-icon.png" alt="">
+                                    <span>Silicon oasis SIT Tower -116
+                                        Dubai , United Arab Emirates</span>
 
                                 </div>
                                 <div class="phone">
-                                    <img src="public/img/call-icon.png" alt="">
+                                    <img src="theme/web/img/call-icon.png" alt="">
                                     <span>+971 54 378 7000</span>
                                 </div>
 
@@ -2383,7 +2179,7 @@
                 <div class="row cpr-row">
                     <div class="cr-left">
                         <span>
-                            © SpiderWorks Technologies LLC. All Rights Reserved.
+                            © Modalife marketing. All Rights Reserved.
                         </span>
                     </div>
                     <div class="cr-right">
@@ -2395,7 +2191,7 @@
 
     </footer>
     <script>
-        var base_url = "https://www.spiderworks.ae";
+        var base_url = "https://www.modalife.ae";
     </script>
     <!-- js file start 222-->
     <script src="public/assets/js/jquery-3.2.1.min.js"></script>
@@ -2407,10 +2203,9 @@
     <script src="public/assets/js/main.js"></script>
     <script src="public/assets/js/form-script.js"></script>
     <script src="public/assets/js/slick.min.js"></script>
-    <script src="miniweb/assets/plugins/jquery-validation/js/jquery.validate.min.js" type="text/javascript"></script>
-    <script src="miniweb/assets/plugins/jquery-validation/js/additional-methods.min.js" type="text/javascript"></script>
-    <script src="assets/sweetalert/js/sweetalert2.min.js" type="text/javascript"></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=6LczBZYbAAAAAPVYdvWLqPwYFKh50fqH2h__gY7q"></script>
+    <script src="public/assets/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="public/assets/js/additional-methods.min.js" type="text/javascript"></script>
+    <script src="public/assets/sweetalert/js/sweetalert2.min.js" type="text/javascript"></script>
     <script>
         $(document).ready(function () {
             // button animation
@@ -2456,184 +2251,7 @@
         });
     </script>
 
-    <script type="text/javascript">
-        $(function () {
-            $('#contactFrm1').validate();
-            $('#contactFrm').validate({
-                rules:
-                {
-                    name: "required",
-                    email:
-                    {
-                        required: true,
-                        email: true,
-                    },
-                    mobile_number: "required",
-                    message: "required",
-                },
-                messages:
-                {
-                    name: "Please enter your name",
-                    email:
-                    {
-                        required: "Please enter your email address.",
-                        email: "Please enter a valid email address."
-                    },
-                    mobile_number: "Please enter your mobile number",
-                    message: "Please enter your requirement",
-                },
-                errorPlacement: function (error, element) {
-                    $(".ajax-error").html('');
-                    $(element).parent('form').next('.error').remove();
-                    error.addClass('text-danger m-0').insertAfter($(element));
-                },
-                submitHandler: function (form) {
-                    $('#contact-btn').text('Processing...');
-                    $('#contact-btn').prop('disabled', true);
-                    var formurl = "https://www.spiderworks.ae/contact-us/save";
-                    $.ajax({
-                        url: formurl,
-                        type: "POST",
-                        data: new FormData($('#contactFrm')[0]),
-                        crossDomain: true,
-                        cache: false,
-                        processData: false,
-                        contentType: false,
-                        success: function (data) {
-                            $('#contact-btn').html('<span class="sp-ex"></span> Send Message');
-                            $('#contact-btn').prop('disabled', false);
-                            grecaptcha.execute('6LczBZYbAAAAAPVYdvWLqPwYFKh50fqH2h__gY7q', {action: 'validate_captcha'}).then(function (token) {
-                                // add token value to form
-                                document.getElementById('g-recaptcha-response').value = token;
-                            });
-                            if (typeof data.errors != "undefined") {
-                                var errors = JSON.parse(JSON.stringify(data.errors))
-                                $.each(errors, function (key, val) {
-                                    $("#" + key + "_contact_error").html(val);
-                                });
-                            }
-                            else {
-                                $(".error").remove();
-                                $("#contactFrm")[0].reset();
 
-                                const Toast = Swal.mixin({
-                                    toast: true,
-                                    position: 'top-end',
-                                    showConfirmButton: false,
-                                    timer: 3000,
-                                    timerProgressBar: true,
-                                    didOpen: (toast) => {
-                                        toast.addEventListener('mouseenter', Swal.stopTimer)
-                                        toast.addEventListener('mouseleave', Swal.resumeTimer)
-                                    }
-                                })
-
-                                // Toast.fire({
-                                //     title: 'Success!',
-                                //     text: 'Thank you for contacting us, we will reach back to you in a short time!',
-                                //     icon: 'success',
-                                // });
-                                var currPage = "";
-                                window.location = "/thankyou?page=" + currPage;
-                            }
-                        },
-                        error: function (xhr) {
-                            $('#contact-btn').html('<span class="sp-ex"></span> Send Message');
-                            $('#contact-btn').prop('disabled', false);
-                            var errors = $.parseJSON(xhr.responseText);
-                            $.each(errors, function (key, val) {
-                                $("#" + key + "_contact_error").text(val);
-                            });
-                        }
-                    });
-                }
-            });
-
-            jQuery.validator.addMethod("phonenu", function (value, element) {
-                var regexPattern = new RegExp(/^[0-9-+ ]+$/);
-                if (regexPattern.test(value)) {
-                    return true;
-                } else {
-                    return false;
-                };
-            }, "Invalid phone number");
-
-            $('#callFrm').validate({
-                rules:
-                {
-                    phone: {
-                        required: true,
-                        phonenu: true,
-                    },
-                },
-                messages:
-                {
-                    phone:
-                    {
-                        required: "Please enter a phone numer.",
-                        phonenu: "Please enter a valid phone numbber."
-                    },
-                },
-                errorPlacement: function (error, element) {
-                    $('#phone-error').remove();
-                    error.insertAfter($('#subcribe-wrap'));
-                },
-                submitHandler: function (form) {
-                    $('#phone-error').remove();
-                    $('#subscribe-btn').prop('disabled', true);
-                    var formurl = $('#callFrm').attr('action');
-                    $.ajax({
-                        url: formurl,
-                        type: "POST",
-                        data: new FormData($('#callFrm')[0]),
-                        cache: false,
-                        processData: false,
-                        contentType: false,
-                        success: function (data) {
-                            $('#subscribe-btn').prop('disabled', false);
-                            if (typeof data.errors != "undefined") {
-                                var errors = JSON.parse(JSON.stringify(data.errors))
-                                $.each(errors, function (key, val) {
-                                    $("#" + key + "_back_error").html(val);
-                                });
-                            }
-                            else {
-                                $(".error").remove();
-                                $("#callFrm")[0].reset();
-
-                                const Toast = Swal.mixin({
-                                    toast: true,
-                                    position: 'top-end',
-                                    showConfirmButton: false,
-                                    timer: 3000,
-                                    timerProgressBar: true,
-                                    didOpen: (toast) => {
-                                        toast.addEventListener('mouseenter', Swal.stopTimer)
-                                        toast.addEventListener('mouseleave', Swal.resumeTimer)
-                                    }
-                                })
-
-                                // Toast.fire({
-                                //     title: 'Success!',
-                                //     text: 'Thank you for contacting us, we will reach back to you in a short time!',
-                                //     icon: 'success',
-                                // });
-                                var currPage = "";
-                                window.location = "/thankyou?page=" + currPage;
-                            }
-                        },
-                        error: function (xhr) {
-                            $('#subscribe-btn').prop('disabled', false);
-                            var errors = $.parseJSON(xhr.responseText);
-                            $.each(errors, function (key, val) {
-                                $("#" + key + "_back_error").text(val);
-                            });
-                        }
-                    });
-                }
-            });
-        })
-    </script>
 
 </body>
 
